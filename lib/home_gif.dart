@@ -118,25 +118,6 @@ class _HomeGifPageState extends State<HomeGif> {
           ),
           centerTitle: true,
           backgroundColor: Color.fromARGB(255, 0, 201, 184),
-          //   actions: [
-          //     IconButton(
-          //       icon: const Icon(
-          //         Icons.favorite,
-          //         color: Color.fromARGB(255, 250, 2, 2),
-          //       ),
-          //       onPressed: () {
-          //         Navigator.push(
-          //           context,
-          //           MaterialPageRoute(
-          //             builder: (context) => FavoriteGifsPage(
-          //               favoriteGifs: _favoriteGifs,
-          //               toggleFavorite: _toggleFavorite,
-          //             ),
-          //           ),
-          //         );
-          //       },
-          //     ),
-          //   ],
         ),
         body: Container(
           decoration: const BoxDecoration(
