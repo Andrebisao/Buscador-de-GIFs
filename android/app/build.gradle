@@ -1,0 +1,26 @@
+android {
+    compileSdkVersion 31
+
+    defaultConfig {
+        applicationId "br.com.andre.dev.app_gif"
+        minSdkVersion 21
+        targetSdkVersion 31
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+        
+        kotlinOptions {
+            jvmTarget = '1.8'
+        }
+    }
+    
+    // Adicione a configuração do JDK
+    tasks.withType(JavaCompile) {
+        options.fork = true
+        options.forkOptions.executable = "/path/to/jdk17/bin/javac" // Certifique-se de que o caminho esteja correto
+    }
+}
