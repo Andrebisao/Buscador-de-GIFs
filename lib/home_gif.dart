@@ -229,7 +229,7 @@ class _HomeGifPageState extends State<HomeGif> {
           ),
         ),
         drawer: Drawer(
-          backgroundColor: Color.fromARGB(255, 0, 201, 184),
+          backgroundColor: const Color.fromARGB(255, 0, 201, 184),
           child: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
             ListTile(
               leading: IconButton(
